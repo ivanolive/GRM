@@ -1,8 +1,8 @@
 
 import sys
-import socialNet as soc
+import SocialNet as soc
 import MeetingsGen as mg
-import groupStructure as gs
+import GroupStructure as gs
 import Person as per
 import Mobility as mb
 import ContactGen as cg
@@ -11,7 +11,7 @@ import ContactGen as cg
 sim_dur = 60
 groups_dur = 30
 
-n_nodes = 1000
+n_nodes = 100
 grid_x = 1500
 grid_y = 1500
 cell_size = 50
@@ -33,8 +33,8 @@ sys.setrecursionlimit(1000000)
 
 if len(sys.argv) == 1:
 #########Synthetic Social Network Paramenters#################
-	social_graph_cluster_size = 50#20
-	cluster_size_sdev = 10
+	social_graph_cluster_size = 10#20
+	cluster_size_sdev = 2
 	p_in = 0.8
 	p_out = 0.2
 	socialGraph = soc.generateGaussian(n_nodes,social_graph_cluster_size, cluster_size_sdev,p_in,p_out);
