@@ -4,10 +4,10 @@ import networkx as nx
 import numpy.random as rd
 import random
 import sys
-import socialNet as soc
+import SocialNet as soc
 import MeetingsGen as mg
 import numpy as np
-#import groupStructure as gs
+#import GroupStructure as gs
 #import Person as per
 
 LEADER = 0
@@ -54,7 +54,7 @@ def meetingPlacesProb(groupStructure,nodesProb, nodeHomes, grid_x, grid_y, grid_
 	totalSum = 0
 
 	for i in range(len(probMatrix)):
-		for j in range(len(probMatrix[i])):				
+		for j in range(len(probMatrix[i])):
 			totalSum += probMatrix[i][j]
 			probMatrix[i][j] = totalSum
 	return probMatrix
@@ -98,7 +98,7 @@ def generateMobility(nodesSchedule,homes,spaceGran,displacementTime):
 			f.write(str(init)+" "+str(nodesSchedule[i][0])+" "+str(int(nextPosition[0]))+" "+str(int(nextPosition[1]))+"\n")
 			f.write(str(end)+" "+str(nodesSchedule[i][0])+" "+str(int(nextPosition[0]))+" "+str(int(nextPosition[1]))+"\n")
 			currentPosition = nextPosition
-	
+
 		if i < len(nodesSchedule)-1 and nodesSchedule[i][0] == nodesSchedule[i+1][0]:
 			if nodesSchedule[i+1][2] - end < displacementTime*2:
 				continue

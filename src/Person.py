@@ -7,9 +7,9 @@ import networkx as nx
 import numpy.random as rd
 import random
 import sys
-import socialNet as soc
+import SocialNet as soc
 import MeetingsGen as mg
-import groupStructure as gs
+import GroupStructure as gs
 
 LEADER = 0
 STRUCTURE = 1
@@ -41,7 +41,7 @@ def insOrdSchedule(schedule,newMeeting):
 		return [newMeeting] + schedule
 	else:
 		return [schedule[0]] + insOrdSchedule(schedule[1:],newMeeting)
-		
+
 
 def mySchedule(node_id, groups,pathTime):	#TODO: Efficiency may be improved here
 	schedule = []
@@ -59,7 +59,7 @@ def mySchedule(node_id, groups,pathTime):	#TODO: Efficiency may be improved here
 				coin = (rd.randint(0,100000000)*1.0)/100000000
 				if prob > coin and not(scheduleConflict(schedule,[groups[i][ENC][k],groups[i][END_ENC][k]],pathTime)) :
 					schedule = insOrdSchedule(schedule,[i,[groups[i][ENC][k],groups[i][END_ENC][k]],groups[i][POSITION][0]])
-					#TODO: modificar tempo de permanencia individual no encontro.	
+					#TODO: modificar tempo de permanencia individual no encontro.
 	return schedule
 
 def allNodesSchedule(n_nodes,groups,pathTime):
@@ -68,7 +68,7 @@ def allNodesSchedule(n_nodes,groups,pathTime):
 		print i
 		a =  mySchedule(i,groups,pathTime)
 		nodesSchedule.append(a)# =  nodesSchedule + [a]
-	return nodesSchedule		
+	return nodesSchedule
 
 def printNodesSchedule(nodesSchedule):
 	for i in range(len(nodesSchedule)):

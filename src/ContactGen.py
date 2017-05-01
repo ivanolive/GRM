@@ -7,9 +7,9 @@ import networkx as nx
 import numpy.random as rd
 import random
 import sys
-import socialNet as soc
+import SocialNet as soc
 import MeetingsGen as mg
-import groupStructure as gs
+import GroupStructure as gs
 import Person as per
 import Mobility as mb
 
@@ -25,7 +25,7 @@ def ajustNodesSchedule(nodesSchedule):
 		print("adjust: "+str(i)+" "+str(len(nodesSchedule[i])))
 		for j in range(len(nodesSchedule[i])):
 			ajusted = ajusted + [[i,nodesSchedule[i][j][0], int(nodesSchedule[i][j][1][0]),int(nodesSchedule[i][j][1][1]),nodesSchedule[i][j][2]]]
-			
+
 	return ajusted
 
 def conflict(entry_a, entry_b):
@@ -61,9 +61,9 @@ def generateContacts(nodesSchedule):
 	nodesSchedule.sort(key=lambda x: x[1])
 	print("second sorting done")
 	f = open("contacts_test.csv","w")
-	
+
 	contacts = []
-	
+
 	group_ant = nodesSchedule[0][1]
 	group = []
 
@@ -79,7 +79,7 @@ def generateContacts(nodesSchedule):
 						init,end,dur = computeDurations(group[j],group[k])
 						contacts = contacts + [[group[j][0],group[k][0],init,dur]]
 						#f.write(str(group[j][0])+" "+str(group[k][0])+" "+str(init)+" "+str(end)+" "+str(dur)+"\n")
-						#f.flush() 
+						#f.flush()
 			group = [nodesSchedule[i]]
 
 		group_ant = nodesSchedule[i][1]

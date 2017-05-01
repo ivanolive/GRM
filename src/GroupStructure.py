@@ -7,7 +7,7 @@ import networkx as nx
 import numpy.random as rd
 import random
 import sys
-import socialNet as soc
+import SocialNet as soc
 import MeetingsGen as mg
 import HeavyTail as pl
 import Mobility as mb
@@ -39,7 +39,7 @@ def snowball(center,graph, maxNodes, p):
 		iterator+=1
 	return members
 
-	
+
 def plotSnowball(G, snowball,num):
 
 	pos=nx.graphviz_layout(G) # positions for all nodes
@@ -56,7 +56,7 @@ def plotSnowball(G, snowball,num):
 	plt.savefig("snowball"+str(num)+".png") # save as png
 	plt.close()
 
-def snowBallTest():			
+def snowBallTest():
 	leaders = selectGroupLeaders(40,10)
 
 	socialGraph = soc.generateGaussian(100,20, 10,0.5,0.002);
@@ -119,16 +119,16 @@ def defineGroups(n_nodes, groupICTalpha,homes, group_size_alpha, group_size_beta
 			coin = (rd.randint(0,100000000)*1.0)/100000000
 			last = [0,0]
 			for i2 in range(len(probMatrix)):
-				for j2 in range(len(probMatrix[i2])):				
+				for j2 in range(len(probMatrix[i2])):
 					if probMatrix[i2][j2] > coin:
 						break
 					last = [i2*grid_size + grid_size/2.0,j2*grid_size + grid_size/2.0]
 			position = last
-			
+
 			positions = positions + [position]
 
 		groupsList = groupsList + [[leader,structure,probabilities,encounters,endEncounter,positions]]
-		
+
 	return groupsList
 
 def willIGo(node_id, group_struct, graph):
@@ -142,7 +142,7 @@ def printGroups(groups):
 	for i in groups:
 		print("Leader: " +str(i[0])+"\n")
 		print("Structure: " +str(i[1])+"\n")
-		print("Probabilities: " +str(i[2])+"\n")		
+		print("Probabilities: " +str(i[2])+"\n")
 		print("Encounters: " +str(i[3])+"\n")
 		print("End of Encounters: " +str(i[4])+"\n")
 		print("Duration:")
