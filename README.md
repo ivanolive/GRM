@@ -13,9 +13,10 @@ If you want to skip the troble of running the code yourself to generate your own
 https://www.dropbox.com/sh/792mi849nf3dvam/AAAR4RofaLBfoFaxmeONe-H4a?dl=0
 
 # DEPENDENCIES
-- networkx
-- numpy
-- matplotlib
+- NetworkX 2.0 or later.
+- Python 2.7, 3.3 or later.
+- Numpy 1.12 or later
+- Matplotlib
 
 # RUNNING
 The RegDistro.csv file specifies the number of groups and their respective regularity. Other simulation parameters can be configured inside main.py source.
