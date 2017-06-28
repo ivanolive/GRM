@@ -12,7 +12,7 @@ Citation Information (bibtex):
                    Michael Silva and
                    Pedro O. S. Vaz de Melo and
                    Antonio A. F. Loureiro},
-    title     = {GRM: Group Regularity Mobility Model},
+    title     = {{GRM}: Group Regularity Mobility Model},
     journal   = {CoRR},
     volume    = {	arXiv:1706.07908},
     year      = {2017},
