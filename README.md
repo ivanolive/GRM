@@ -3,7 +3,7 @@ Group Regularity Mobility Model
 
 Research Paper: https://arxiv.org/pdf/1706.07908.pdf
 
-Citation Information: 
+Citation Information (bibtex): 
 
 @article{
     grm,
@@ -12,7 +12,7 @@ Citation Information:
                    Michael Silva and
                    Pedro O. S. Vaz de Melo and
                    Antonio A. F. Loureiro},
-    title     = {{GRM:} Group Regularity Mobility Model},
+    title     = {GRM: Group Regularity Mobility Model},
     journal   = {CoRR},
     volume    = {	arXiv:1706.07908},
     year      = {2017},
