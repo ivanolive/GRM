@@ -5,7 +5,7 @@ Research Paper: https://arxiv.org/pdf/1706.07908.pdf
 
 # Citation Information (bibtex): 
 ```latex
-@article{
+@INPROCEEDINGS{
     grm,
     AUTHOR="Ivan Nunes and Clayson Celes and Michael Silva and Pedro {Vaz de Melo} and Antonio {A.F. Loureiro}",
     TITLE="{GRM:} Group Regularity Mobility Model",
