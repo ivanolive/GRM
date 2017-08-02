@@ -12,7 +12,7 @@ https://www.dropbox.com/sh/792mi849nf3dvam/AAAR4RofaLBfoFaxmeONe-H4a?dl=0
 
 # Opportunistic Routing on GRM Traces
 
-One of the most common use cases for mobility models is in the evaluation of mobile networking protocols. Therefore, a mobility model should ideally mimic well the behavior of such protocols in real-world mobility traces. In this section, we evaluate how state-of-art protocols for opportunistic networking perform on GRM. Since the socially-aware strategies are remarkably the most successful for this type of network, this is the focus of our analysis. Namely, we evaluate the performance of Flooding, Bubble Rap, and Groups-Net strategies.
+- TODO
 
 # DEPENDENCIES
 - Python 2.7, 3.3 or later.
@@ -37,7 +37,7 @@ Format: "ID1 ID2 CONTACT-TIME CONTACT-DURATION"
 ```latex
 @INPROCEEDINGS{
     grm,
-    AUTHOR="Ivan Nunes and Clayson Celes and Michael Silva and Pedro {Vaz de Melo} and Antonio {A.F. Loureiro}",
+    AUTHOR="Ivan O. Nunes and Clayson Celes and Michael Silva and Pedro {Vaz de Melo} and Antonio {A.F. Loureiro}",
     TITLE="{GRM:} Group Regularity Mobility Model",
     BOOKTITLE="20th ACM International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWiM'17)",
     ADDRESS="Miami Beach, USA",
