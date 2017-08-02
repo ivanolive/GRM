@@ -7,16 +7,12 @@ Research Paper: https://arxiv.org/pdf/1706.07908.pdf
 ```latex
 @article{
     grm,
-    author    = {  Ivan Oliveira Nunes and
-                   Clayson Celes and
-                   Michael Silva and
-                   Pedro O. S. Vaz de Melo and
-                   Antonio A. F. Loureiro},
-    title     = {{GRM}: Group Regularity Mobility Model},
-    journal   = {CoRR},
-    volume    = {	arXiv:1706.07908},
-    year      = {2017},
-    url       = {https://arxiv.org/pdf/1706.07908.pdf}}
+    AUTHOR="Ivan Nunes and Clayson Celes and Michael Silva and Pedro {Vaz de Melo} and Antonio {A.F. Loureiro}",
+    TITLE="{GRM:} Group Regularity Mobility Model",
+    BOOKTITLE="20th ACM International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWiM'17)",
+    ADDRESS="Miami Beach, USA",
+    YEAR=2017
+}
 ```
 
 
