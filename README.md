@@ -13,6 +13,17 @@ https://www.dropbox.com/sh/792mi849nf3dvam/AAAR4RofaLBfoFaxmeONe-H4a?dl=0
 # Opportunistic Routing on GRM Traces
 
 One of the most common use cases of social mobility models in on the evaluation of opportinistic networks (OppNets) protocols.
+OppNet protocols usually have the goal of  providing cost-effective message delivery, i.e., the highest
+possible delivery ratio with the lowest possible network overhead. These metrics can be more formally defined as:
+
+- Delivery ratio: Evaluates the percentage of successfully
+delivered messages for different values of message Time
+To Live (TTL).
+
+- Number of transmissions: Measures the network overhead,
+i.e., the number of device-to-device transmissions
+that each algorithm performs for different TTLs.
+
 
 We have evaluated the behavior of, two well know socially aware protocols for OppNets on GRM, namely Bubble Rap and GROUPS-NET.
 
@@ -49,6 +60,8 @@ more times in the recent past have a greater chance of meeting
 again in the near future. Since Groups-Net is a group
 regularity based forwarding policy, it makes perfect sense to
 evaluate it in GRM.
+
+
 
 # DEPENDENCIES
 - Python 2.7, 3.3 or later.
