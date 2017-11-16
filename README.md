@@ -61,7 +61,16 @@ again in the near future. Since Groups-Net is a group
 regularity based forwarding policy, it makes perfect sense to
 evaluate it in GRM.
 
+- Results on GRM generated trace with 100 nodes.
 <img src="./img/deliv_log.png" width="300" height="300"> <img src="./img/overhead_log.png" width="300" height="300">
+
+- Results on GRM generated trace with 1000 nodes.
+<img src="./img/deliv_log1000.png" width="300" height="300"> <img src="./img/overhead_log1000.png" width="300" height="300">
+
+
+The traces used on these experiments are available at: https://www.dropbox.com/sh/792mi849nf3dvam/AAAR4RofaLBfoFaxmeONe-H4a?dl=0
+
+
 
 # DEPENDENCIES
 - Python 2.7, 3.3 or later.
