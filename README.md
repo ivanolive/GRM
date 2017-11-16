@@ -12,7 +12,43 @@ https://www.dropbox.com/sh/792mi849nf3dvam/AAAR4RofaLBfoFaxmeONe-H4a?dl=0
 
 # Opportunistic Routing on GRM Traces
 
-- TODO
+One of the most common use cases of social mobility models in on the evaluation of opportinistic networks (OppNets) protocols.
+
+We have evaluated the behavior of, two well know socially aware protocols for OppNets on GRM, namely Bubble Rap and GROUPS-NET.
+
+The Bubble Rap algorithm identifies social communities
+by looking at densely interconnected nodes in the aggregated
+contact graph of the trace. Each node in the network must
+belong to at least one community. Nodes that do not belong
+to any community are assigned to a pseudo-community
+of one node. This is necessary for the forwarding algorithm
+operation. Also, each node gets a measure of its global popularity
+in the network (GlobalRank) and a local measurement
+of popularity, which is valid within that node’s community
+(LocalRank). Using these parameters, the forwarding strategy
+works as follows. At each encounter, a given node transmits
+its content if the encountered node has a higher GlobalRank,
+or if the encountered node belongs to a community of
+which the final destination is a member. Once the message
+is inside the final destination’s community, the forwarding
+process occurs if the LocalRank of the encountered node is
+higher than the LocalRank of the node that has the message.
+This procedure goes on until the message reaches the
+destination.
+
+The Groups-Net algorithm works by forwarding messages
+from the origin node to the destination node through the
+most probable group-to-group path. To define the most
+probable group-to-group path, the algorithm considers the
+probability of groups of nodes re-meeting in the near future
+and the probability of a message being carried between two
+different groups by a person who is a member of both groups.
+The probability for a group to meet again in the future is
+defined based on the assumption that groups that have met
+more times in the recent past have a greater chance of meeting
+again in the near future. Since Groups-Net is a group
+regularity based forwarding policy, it makes perfect sense to
+evaluate it in GRM.
 
 # DEPENDENCIES
 - Python 2.7, 3.3 or later.
