@@ -61,7 +61,7 @@ again in the near future. Since Groups-Net is a group
 regularity based forwarding policy, it makes perfect sense to
 evaluate it in GRM.
 
-
+![Alt text](./img/deliv_log.png?raw=true "Title")
 
 # DEPENDENCIES
 - Python 2.7, 3.3 or later.
