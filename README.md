@@ -61,9 +61,7 @@ again in the near future. Since Groups-Net is a group
 regularity based forwarding policy, it makes perfect sense to
 evaluate it in GRM.
 
-<img src="./img/overhead_log.png" width="100" height="100">
-
-![](./img/deliv_log.png?v=4&s=200) ![](./img/overhead_log.png?v=4&s=200)
+<img src="./img/overhead_log.png" width="300" height="300"> <img src="./img/deliv_log.png" width="300" height="300">
 
 # DEPENDENCIES
 - Python 2.7, 3.3 or later.
