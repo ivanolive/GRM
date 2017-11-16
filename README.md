@@ -25,7 +25,8 @@ i.e., the number of device-to-device transmissions
 that each algorithm performs for different TTLs.
 
 
-We have evaluated the behavior of, two well know socially aware protocols for OppNets on GRM, namely Bubble Rap and GROUPS-NET.
+We have evaluated the behavior of, two well know socially aware protocols for OppNets on GRM, namely Bubble Rap and GROUPS-NET. In addition
+we also include the results for the naive approach, i.e., Flooding or Epidemic Forwarding, in which every node simply forwards all messages to every encountered node.
 
 The Bubble Rap algorithm identifies social communities
 by looking at densely interconnected nodes in the aggregated
