@@ -74,6 +74,29 @@ evaluate it in GRM.
 The traces used on these experiments are available at: https://www.dropbox.com/sh/792mi849nf3dvam/AAAR4RofaLBfoFaxmeONe-H4a?dl=0
 
 
+The result shows that the performances of such algorithms
+in GRM conform with their performances in real mobility
+traces, as reported in the original studies [http://ieeexplore.ieee.org/abstract/document/5677535/, http://www.sciencedirect.com/science/article/pii/S1389128617303237]. They
+present high delivery ratios, which are comparable to the
+flooding delivery. On the other hand, by exploring the social
+context, in the form of communities in Bubble Rap, and
+in the form of group meetings awareness in Groups-Net, such
+protocols provide low network overhead, since they only forward
+messages to the appropriate nodes.
+
+With the increase in the number of nodes in the network,
+from 100 to 1000, we see that the flooding overhead grows extremely
+fast, as expected due to its promiscuous forwarding
+policy. In the trace with 100 nodes, Bubble Rap presents
+a lower overhead than Groups-Net. When the number of
+network nodes increases, the overhead of Groups-Net becomes
+smaller than the Bubble Rap’s overhead. As discussed
+in [16], the Bubble Rap’s overhead presents a linear increase
+with the number of nodes in the network. This behavior is
+explained by the greedy nature of Bubble Rap’s algorithm.
+On the other hand, Groups-Net’s overhead remains stable,
+improving its performance in large-scale scenarios
+
 
 # DEPENDENCIES
 - Python 2.7, 3.3 or later.
