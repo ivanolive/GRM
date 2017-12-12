@@ -28,7 +28,7 @@ def snowball(center,graph, maxNodes, p):
 	members = [center]
 	iterator = 0
 	while len(members) < maxNodes and iterator < len(members):
-		randomizedNeighbors = list(rd.permutation(graph.neighbors(members[iterator])))
+		randomizedNeighbors = rd.permutation(list(graph.neighbors(members[iterator])))
 		size = int(len(members)*p) + 1
 		randomizedNeighbors = randomizedNeighbors[:size]
 		for i in randomizedNeighbors:
